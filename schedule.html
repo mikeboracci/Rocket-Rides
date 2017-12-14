@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" ></script>
+	<link rel="stylesheet" href="css/rr.css" >
+	
+</head>
+<body style="background-image:url('img/header.jpg');repeat: no-repeat;">
+	<header class="row-fluid">
+	
+		
+		<nav id="desktopmenu">
+			<ul id="navul">
+				<li><a href="schedule.html">Ride Schedule</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+	
+		</nav>
+		
+		<!-- Dropdown Menu -->
+		<nav id="dropnav" class="dropdown" >
+			<button id="mmbut" class="dropdown-toggle" data-toggle="dropdown">BLAST OFF!
+			<span class="caret"></span></button>
+			<ul id="navul" class="dropdown-menu">
+				<li><a href="schedule.html">Ride Schedule</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+		<div id="logo"><img src="img/logo.png"></div>
+		
+		<div id="scheduler" >
+			<div><h2>Use our scheduler to<br>book your <span class="scheduleheader">Blast Off</span></h2></div>
+			<div id="bookform">
+				<form id="form1" novalidate="novalidate">
+					 <fieldset id="bookinfo">
+						<legend>Reserve Your Time Slot Here</legend>
+						<label id="namelabel" for="nameinput">Name</label>
+						<input type="text" id="nameinput" name="name" required="required" />
+						<label id="emaillabel"for="emailinput">Email</label>
+						<input type="email" id="emailinput" name="email" required="required" />
+						<label id="phonelabel"for="phoneinput">Phone</label>
+						<input type="text" id="phoneinput" name="phone" required="required" />
+						<label id="timelabel"for="timeslot">Desired Time Slot</label>
+							<select id="timeSlot">
+								<option value="6">6:00 AM</option>
+								<option value="9">9:00 AM</option>
+								<option value="11">11:00 AM</option>
+								<option value="3">3:00 PM</option>
+								<option value="5">5:00 PM</option>
+							</select>
+						<label id="vehiclelabel" for="vehiclesel">Desired Vehicle</label>
+						<select id="vehicleSel">
+							  <option value="Orbit 9000">Orbit 9000</option>
+							  <option value="Blue Dragon">Blue Dragon</option>
+							  <option value="Earth Missile">Earth Missile</option>
+							  <option value="Event Horizon">Event Horizon</option>
+							  <option value="SKUD">SKUD</option>
+							</select>
+					 </fieldset>
+				</form>
+					<fieldset id="submit">
+					<input type="button" id="submit1" value="Blast Off" onclick="updateGrid()" />
+					</fieldset>
+				<div id="bookMsg"></div>
+				<table id="calendar">
+						<tr><td id="ttitle" colspan="3"><h4>Blast Off times are relative to Saturday, August 18th, 2018<h4></td></tr>
+						<tr>
+							<td><div id="slot">Time Slot</div></td>
+							<td><div id="status">Status</div></td>
+							<td><div id="vehicle">Vehicle</div></td>
+						</tr>
+						<tr>
+							<td><div id="6">6:00 AM</div></td>
+							<td><div id="6s"></div></td>
+							<td><div id="6v"></div></td>
+						</tr>
+						</tr>
+						<tr>
+							<td><div id="9">9:00 AM</div></td>
+							<td><div id="9s"></div></td>
+							<td><div id="9v"></div></td>
+						</tr>
+						</tr>
+						<tr>
+							<td><div id="11">11:00 AM</div></td>
+							<td><div id="11s"></div></td>
+							<td><div id="11v"></div></td>
+						</tr>
+						</tr>
+						<tr>
+							<td><div id="3">3:00 PM</div></td>
+							<td><div id="3s"></div></td>
+							<td><div id="3v"></div></td>
+						</tr>
+						</tr>
+						<tr>
+							<td><div id="5">5:00 PM</div></td>
+							<td><div id="5s"></div></td>
+							<td><div id="5v"></div></td>
+						</tr>
+				</table>
+				
+			</div> <!-- end bookform -->
+	</div> <!--row end-->	
+		
+	</header>
+	
+	<footer>
+			
+			<p>All Rocket Racing Blast Off activities are subject to certain restrictions</p>	
+	</footer>
+	<script src="js/rr.js"></script>
+</body>
+</html>
