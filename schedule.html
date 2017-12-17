@@ -14,9 +14,6 @@
 	
 </head>
 <body style="background-image:url('img/header.jpg');repeat: no-repeat;">
-	<header class="row-fluid">
-	
-		
 		<nav id="desktopmenu">
 			<ul id="navul">
 				<li><a href="schedule.html">Ride Schedule</a></li>
@@ -41,18 +38,17 @@
 		<div id="logo"><img src="img/logo.png"></div>
 		
 		<div id="scheduler" >
-			<div><h2>Use our scheduler to<br>book your <span class="scheduleheader">Blast Off</span></h2></div>
+			<div class="schedhead"><h2>Use our scheduler to<br>book your <span class="scheduleheader">Blast Off</span></h2></div>
 			<div id="bookform">
 				<form id="form1" novalidate="novalidate">
 					 <fieldset id="bookinfo">
 						<legend>Reserve Your Time Slot Here</legend>
-						<label id="namelabel" for="nameinput">Name</label>
-						<input type="text" id="nameinput" name="name" required="required" />
-						<label id="emaillabel"for="emailinput">Email</label>
-						<input type="email" id="emailinput" name="email" required="required" />
-						<label id="phonelabel"for="phoneinput">Phone</label>
-						<input type="text" id="phoneinput" name="phone" required="required" />
-						<label id="timelabel"for="timeslot">Desired Time Slot</label>
+						<input type="text" id="nameinput" placeholder="Your Name" name="name" required="required" />
+						<input type="email" id="emailinput" placeholder="Your Email" name="email" required="required" />
+						<input type="text" id="phoneinput" placeholder="Your Phone" name="phone" required="required" />
+					</fieldset>
+					<fieldset id="timeveh">
+						<div class="timelabel">Choose a time slot and Vehicle</div>
 							<select id="timeSlot">
 								<option value="6">6:00 AM</option>
 								<option value="9">9:00 AM</option>
@@ -60,15 +56,14 @@
 								<option value="3">3:00 PM</option>
 								<option value="5">5:00 PM</option>
 							</select>
-						<label id="vehiclelabel" for="vehiclesel">Desired Vehicle</label>
-						<select id="vehicleSel">
+							<select id="vehicleSel">
 							  <option value="Orbit 9000">Orbit 9000</option>
 							  <option value="Blue Dragon">Blue Dragon</option>
 							  <option value="Earth Missile">Earth Missile</option>
 							  <option value="Event Horizon">Event Horizon</option>
 							  <option value="SKUD">SKUD</option>
 							</select>
-					 </fieldset>
+					<fieldset>
 				</form>
 					<fieldset id="submit">
 					<input type="button" id="submit1" value="Blast Off" onclick="updateGrid()" />
@@ -115,7 +110,7 @@
 			</div> <!-- end bookform -->
 	</div> <!--row end-->	
 		
-	</header>
+	
 	
 	<footer>
 			
