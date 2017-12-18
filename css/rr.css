@@ -185,16 +185,23 @@ div.driver{border: 1px solid grey;width:95%;margin:0 auto;text-align:center;back
 .team {text-align:center;}
 
 
-body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;font-size:1em;}
-div#learnblock{background-color:rgba(255,255,255,.9);margin-left:auto;margin-right:auto;margin-top:25%;padding-left:0px;padding-right:0px;border-radius:6px;font-size:1em;}
-div#learnblock p, h2, h1{width:90%;}
-.container {padding-left:0px;padding-right:0px;}
-iframe{width:540px;}
+/* LEARN PAGE */
+
+body.learnbody{position:absolute;top:0px;left:0px;min-height:1500px;width:100vw;background-image:url('../img/3.jpg');background-size:cover;}
+
+div#learnblock{background-color:rgba(255,255,255,.9);margin-left:0px;margin-right:0px;margin-top:25%;padding-left:0px;padding-right:0px;border-radius:6px;font-size:1em;width:100%;}
+
+div#learnblock p, h2, h1{width:100%;margin-left:auto;margin-right:auto;}
+
+.container {}
+
+iframe{width:100%;}
+
 
 
 /*------------------------------------------------------TABLET--------------------------------------------------------------------*/
 
-@media (min-width: 860px){
+@media (min-width: 768px){
 
 
 
@@ -264,7 +271,7 @@ a.learn {
 
 body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;}
 div#learnblock{background-color:rgba(255,255,255,.9);width:100%;margin:0 auto;margin-top:25%;padding:70px;border-radius:6px;}
-iframe{height:500px;width:600px;}
+iframe{height:500px;width:600px;padding-left:20px;}
 
 
 div#scheduler {
@@ -286,93 +293,6 @@ div.driver{border: 1px solid grey;width:100vw;padding-right:20px;padding-left:20
 .team h1 {display:block;padding:20px;}
 .driverprof {width:75%;display:block; font-size:1.5em;}
 .carprof {display:block; width:100%; }
-
-
-	
-}
-
-
-/*-----------------------------------------------960px /wide tablet -------------------------------------------------------------------*/
-
-
-@media (min-width: 960px){
-	
-	
-/* toggles */
-
-html{
-	background-color: #ececec;
-	font-family:Orbitron;
-}
-
-video#rocket1 {
-    position: fixed;
-    top: 0;
- 	margin-left:60px;
-	min-width:100vw;
-	display:block;
-	z-index:0;
-}
-	
-
- .learn:hover {
- color: rgba(255, 255, 255, 1);
- box-shadow: 0 0px 15px rgba(32, 32, 32, .8);
- border:1px solid gray;
- }	
-
-	
-
-div#logo img {width: 500px;}
-
-
-nav#desktopmenu{
-	display:block;
-	width:100vh;    
-	height:60px;
-	position:fixed;
-	background:#d9d9d9;
-	-webkit-transform-origin: left top;
-	-webkit-transform:rotate(-90deg) translateX(-100%);
-	z-index:100;
-}
-#navul{}
-
-#navul li{  
-	font-size:1.5em;
-	margin-right:20px;
-	float:right;
-	height:100%;
-	line-height:45px;
-	list-style-type:none;
-}	
-li a {
-	text-decoration: none;
-	
-}
-li a:hover {
-	color: orange;
-	text-decoration: none; 
-	
-}
-
-
-
-/* footer styles */
-footer{text-align:center;width:100%;padding:10px;}
-
-/* about us styles*/
-body.aboutbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/22.jpg');background-size:cover;}
-body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;}
-div#learnblock{background-color:rgba(255,255,255,.9);width:100%;margin:0 auto;margin-top:25%;padding:70px;border-radius:6px;}
-iframe{height:500px;width:600px;}
-
-
-#abouttop {width:75%;margin-left:18%;margin-top:20%;}
-#rrstory{color:black;width:100%;}
-
-
-
 
 
 /* CONTACT FORM */
@@ -468,10 +388,97 @@ fieldset {
  color:#888;
 }
 
+	
+}
+
+
+/*-----------------------------------------------960px /wide tablet -------------------------------------------------------------------*/
+
+
+@media (min-width: 960px){
+	
+	
+/* toggles */
+
+html{
+	background-color: #ececec;
+	font-family:Orbitron;
+}
+
+video#rocket1 {
+    position: fixed;
+    top: 0;
+ 	margin-left:60px;
+	min-width:100vw;
+	display:block;
+	z-index:0;
+}
+	
+
+ .learn:hover {
+ color: rgba(255, 255, 255, 1);
+ box-shadow: 0 0px 15px rgba(32, 32, 32, .8);
+ border:1px solid gray;
+ }	
+
+	
+
+div#logo img {width: 500px;}
+
+
+nav#desktopmenu{
+	display:block;
+	width:100vh;    
+	height:60px;
+	position:fixed;
+	background:#d9d9d9;
+	-webkit-transform-origin: left top;
+	-webkit-transform:rotate(-90deg) translateX(-100%);
+	z-index:100;
+}
+#navul{}
+
+#navul li{  
+	font-size:1.5em;
+	margin-right:20px;
+	float:right;
+	height:100%;
+	line-height:45px;
+	list-style-type:none;
+}	
+li a {
+	text-decoration: none;
+	
+}
+li a:hover {
+	color: orange;
+	text-decoration: none; 
+	
+}
+
+
+
+/* footer styles */
+footer{text-align:center;width:100%;padding:10px;}
+
+/* about us styles*/
+body.aboutbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/22.jpg');background-size:cover;}
+body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;}
+div#learnblock{background-color:rgba(255,255,255,.9);width:100%;margin:0 auto;margin-top:25%;padding:70px;border-radius:6px;}
+iframe{height:500px;width:600px;}
+
+
+#abouttop {width:75%;margin-left:18%;margin-top:20%;}
+#rrstory{color:black;width:100%;}
+
+
+
+
+
 /* TEAM PAGE STYLES */
 
 div.driver{border: 1px solid grey;width:100vw;padding-right:20px;padding-left:20px;margin-left:40px;}
-.driverimg {float:left;padding:10px;border:1px solid grey;width: 350px;background-color:white;}
+.driverimg {float:left;padding:10px;border:1px solid grey;width: 250px;background-color:white;}
 .team h1 {display:block;padding:20px;}
 .driverprof {width:75%;display:block; font-size:1.5em;padding:10px;}
 .carprof {display:block; width:100%; height:200px;margin-top:20px;}
