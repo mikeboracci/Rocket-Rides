@@ -9,9 +9,11 @@ table, th, td {border: 1px solid black;}
 
 /* logo */
 
-div#logo{margin-bottom:30px;background-color:transparent;}
-div#logo img {width:90%;padding:25px;margin:0 auto;}
-div#logosc{margin-top:25px;width:300px;}
+div#logo{position:fixed;top:37px;left:10%;z-index:100;width:300px;background-color:transparent;}
+div#logo img {width:250px;}
+
+
+a.learn{display: none;}
 
 /*   NAV SECTION */
 
@@ -143,6 +145,8 @@ div#scheduler {
 	background: rgba(255, 255, 255, .7);
 	border-radius:6px;
 	padding:25px;
+	padding-top:75px;
+
 }
 div.schedhead  h2{text-align:center; margin: 0 auto;}
 legend {text-align:center;padding:10px;}
@@ -165,18 +169,27 @@ footer{text-align:center;}
 
 /* TEAM PAGE STYLES */
 
-div.driver{border: 1px solid grey;width:95%;margin:0 auto;text-align:center;}
-.driver {margin-top:10px;padding:5px;border: 2px solid gray;width: 200px;background-color:white;}
-.teamh1 {display:block;}
-.driverprof {width:95%;display:block;padding:5px; font-size:1em;margin:0 auto;}
+div.driver{border: 1px solid grey;width:95%;margin:0 auto;text-align:center;background-color:white;}
+.driverimg {margin-top:10px;padding:5px;border: 2px solid gray;width: 200px;}
+.team h1 {display:block;padding:20px;}
+.driverprof {width:95%;display:block;padding:5px; font-size:1.5em;margin:0 auto;}
 .carprof {display:block; width:95%;padding:5px;border:2px solid gray;}
 #teamheader{
 	background-repeat:no-repeat;
 	background-size:100vw;
-	margin-bottom:2px;
-	
+	margin:0 auto;
+	padding-top:200px;
+	width:100%;
 }
 
+.team {text-align:center;}
+
+
+body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;font-size:1em;}
+div#learnblock{background-color:rgba(255,255,255,.9);margin-left:auto;margin-right:auto;margin-top:25%;padding-left:0px;padding-right:0px;border-radius:6px;font-size:1em;}
+div#learnblock p, h2, h1{width:90%;}
+.container {padding-left:0px;padding-right:0px;}
+iframe{width:540px;}
 
 
 /*------------------------------------------------------TABLET--------------------------------------------------------------------*/
@@ -184,14 +197,14 @@ div.driver{border: 1px solid grey;width:95%;margin:0 auto;text-align:center;}
 @media (min-width: 860px){
 
 
-div#logo img {width:350px;margin-top:25px;}	
 
 /* about us styles*/
 body.aboutbody{background-image:url('../img/22.jpg');background-size:cover;}
-img.aboutlogo {position:fixed;top:25px;left:60%;z-index:100;width:500px;}
+
 #abouttop {width:75%;margin-left:18%;margin-top:5%;}
 #rrstory{color:black;width:100%;}
 
+div#logo img {width:350px;}
 	
 nav#dropnav{display:none;}
 
@@ -220,6 +233,61 @@ div#frontwell{display:none;}
 div#frontcontact{display:none;}
 li a {	text-decoration: none;}
 li a:hover {color: orange;text-decoration: none;}
+
+
+a.learn {
+	display:block;
+	border:1px solid gray;
+	border-radius:16px;
+	box-shadow: 0 0px 10px rgba(0, 0, 0, .5);
+	position:absolute;
+	top:125px;
+	left:25%;
+	float:left;
+	text-align:center;
+	text-wrap:nowrap;
+	font-size:2em;
+	color: black;
+    background: #ececec;
+    padding: 15px 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+	}	
+
+ .learn:hover {
+ color: rgba(255, 255, 255, 1);
+ box-shadow: 0 0px 15px rgba(32, 32, 32, .8);
+ border:1px solid gray;
+ }	
+
+
+body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;}
+div#learnblock{background-color:rgba(255,255,255,.9);width:100%;margin:0 auto;margin-top:25%;padding:70px;border-radius:6px;}
+iframe{height:500px;width:600px;}
+
+
+div#scheduler {
+	border: 1px solid black;
+	max-width:80vw;
+	background: rgba(255, 255, 255, .7);
+	border-radius:6px;
+	padding:60px;
+	padding-top:100px;
+	margin-right:auto;
+	margin-left:13%;
+
+}
+
+/* TEAM PAGE STYLES */
+
+div.driver{border: 1px solid grey;width:100vw;padding-right:20px;padding-left:20px;margin-left:40px;}
+.driverimg {margin:0 auto;padding:10px;border: 1px solid grey;width: 350px;background-color:white;}
+.team h1 {display:block;padding:20px;}
+.driverprof {width:75%;display:block; font-size:1.5em;}
+.carprof {display:block; width:100%; }
+
+
 	
 }
 
@@ -246,23 +314,6 @@ video#rocket1 {
 	z-index:0;
 }
 	
-.learn {
-	border:1px solid gray;
-	border-radius:16px;
-	box-shadow: 0 0px 10px rgba(0, 0, 0, .5);
-	position:absolute;
-	top:15px;
-	left:25%;
-	float:left;
-	text-align:center;
-	text-wrap:nowrap;
-	font-size:2em;
-	color: black;
-    background: #ececec;
-    padding: 15px 40px;
-    font-weight: normal;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;}	
 
  .learn:hover {
  color: rgba(255, 255, 255, 1);
@@ -270,24 +321,9 @@ video#rocket1 {
  border:1px solid gray;
  }	
 
-.learnbody{} 
 	
-div#logo{
-	top: 25px;
-	margin-left:50%;
-	width:300px;
-	
-}
-div#logosc{
-	position: absolute;
-	top: 500px;
-	right:100px;
-	
-}
 
-div#logo img {
-	width: 500px;display:
-}
+div#logo img {width: 500px;}
 
 
 nav#desktopmenu{
@@ -320,15 +356,6 @@ li a:hover {
 	
 }
 
-/* scheduler */
-
-div#scheduler {
-	width:80%;
-	height:100%;
-	margin-right:auto;
-	margin-left:12%;
-	margin-top:200px;
-}
 
 
 /* footer styles */
@@ -337,20 +364,15 @@ footer{text-align:center;width:100%;padding:10px;}
 /* about us styles*/
 body.aboutbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/22.jpg');background-size:cover;}
 body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;}
-div#learnblock{background-color:rgba(255,255,255,.9);width:100%;margin:0 auto;margin-top:150px;padding:70px;border-radius:6px;}
-div.vidblock{position:relative;width:100%;height:100%;margin-left:32%;margin-right:auto;padding:40px;}
-img.aboutlogo {position:fixed;top:25px;left:50%;z-index:100;width:500px;}
+div#learnblock{background-color:rgba(255,255,255,.9);width:100%;margin:0 auto;margin-top:25%;padding:70px;border-radius:6px;}
+iframe{height:500px;width:600px;}
+
+
 #abouttop {width:75%;margin-left:18%;margin-top:20%;}
 #rrstory{color:black;width:100%;}
 
 
-/* TEAM PAGE STYLES */
 
-div.driver{border: 1px solid grey;width:100%;}
-.driver { float:left;margin-left:6%;padding:10px;border: 1px solid grey;width: 200px;background-color:white;}
-.teamh1 {display:block;}
-.driverprof {width:75%;display:block; font-size:1em;}
-.carprof {display:block; width:75%; height:180px;width:300px;}
 
 
 /* CONTACT FORM */
@@ -446,7 +468,16 @@ fieldset {
  color:#888;
 }
 
+/* TEAM PAGE STYLES */
 
+div.driver{border: 1px solid grey;width:100vw;padding-right:20px;padding-left:20px;margin-left:40px;}
+.driverimg {float:left;padding:10px;border:1px solid grey;width: 350px;background-color:white;}
+.team h1 {display:block;padding:20px;}
+.driverprof {width:75%;display:block; font-size:1.5em;padding:10px;}
+.carprof {display:block; width:100%; height:200px;margin-top:20px;}
+
+
+	
 
 
 
@@ -460,20 +491,34 @@ fieldset {
 	
 
 	
-
-
-
+video#rocket1 {
+	min-width:97vw;
+}
+div.vidblock{padding:20px;}
 	
 	/* TEAM PAGE STYLES */
 
-div.driver{border: 1px solid grey;width:100%;margin-left:60px;}
-.driver { float:left;margin-left:6%;padding:10px;border: 1px solid grey;width: 200px;background-color:white;}
-.teamh1 {display:block;}
-.driverprof {width:75%;display:block; font-size:1em;}
-.carprof {display:block; width:75%; height:180px;width:380px;}
+div.driver{border: 1px solid grey;width:95vw;padding-right:10px;margin-left:15px;}
+.driverimg { float:left;margin-left:6%;margin-right:10px;padding:10px;border: 1px solid grey;width: 350px;background-color:white;}
+.team h1 {display:block;padding:20px;}
+.driverprof {width:85%;display:block; font-size:1.5em;}
+.carprof {display:block; width:100%;height:250px;margin-top:20px;}
 
 
 #contact{display:none;}	
+
+#teamheader{
+	margin:0 auto;
+	padding-left:40px;
+	padding-top:200px;
+}
+
+body.learnbody{position:absolute;top:0px;min-height:1500px;background-image:url('../img/3.jpg');background-size:cover;font-size:1em;}
+div#learnblock{background-color:rgba(255,255,255,.9);margin-left:60px;margin-right:60px;margin-top:25%;padding-left:40px;padding-right:40px;border-radius:6px;font-size:1em;}
+div#learnblock p, h2, h1{width:90%;}
+.container {padding-left:40px;padding-right:40px;}
+iframe{width:960px;}
+
 
 	
 }
